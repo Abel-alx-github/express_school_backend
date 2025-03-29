@@ -11,10 +11,5 @@
       "src": "/api/(.*)",
       "dest": "dist/server.js"
     }
-  ],
-  "hooks": {
-    "build": {
-      "command": "npm run build"
-    }
-  }
+  ]
 }
