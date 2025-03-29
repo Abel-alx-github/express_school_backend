@@ -18,7 +18,7 @@ app.use(cookie_parser());
 app.use("/api/users", users_route);
 app.use("/api/products", products_route);
 
-app.get('/', auth_user, (req :Request , res:Response) => {
+app.get('/', (req :Request , res:Response) => {
   res.send("Hello World ");
 });
 
