@@ -2,19 +2,19 @@
   "version": 2,
   "builds": [
     {
-      "src": "dist/server.js",  // Point to the compiled output file
+      "src": "dist/server.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "dist/server.js"  // Route API requests to the compiled file
+      "dest": "dist/server.js"
     }
   ],
   "hooks": {
     "build": {
-      "command": "npm run build"  // Specify the build command to compile TypeScript
+      "command": "npm run build"
     }
   }
 }
